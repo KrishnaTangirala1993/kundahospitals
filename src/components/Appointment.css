@@ -1,0 +1,97 @@
+/* src/components/Appointment.css */
+.appointment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: left;
+    padding: 40px; /* Add some padding for smaller screens */
+}
+.appointment h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.appointment form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px; /* Set a max-width for larger screens */
+    padding: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    position: relative;
+}
+.appointment h1 {
+    position: absolute;
+    top: -10rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f9f9f9;
+    padding: 0 1rem;
+}
+.appointment label {
+    margin-bottom: 1rem;
+}
+.appointment input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+.appointment button {
+    padding: 0.3rem;
+    font-size: 0.9rem;
+    background-color: lightgreen;
+    border: none;
+    cursor: pointer;
+    align-self: center;
+}
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+    .appointment h1 {
+        font-size: 1.5rem;
+        top: -8rem;
+    }
+    .appointment form {
+        padding: 1.5rem;
+    }
+    .appointment input {
+        font-size: 0.9rem;
+    }
+    .appointment button {
+        font-size: 0.8rem;
+    }
+}
+/* Media query for medium screens */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .appointment h1 {
+        font-size: 1.8rem;
+        top: -9rem;
+    }
+    .appointment form {
+        padding: 1.8rem;
+    }
+    .appointment input {
+        font-size: 1rem;
+    }
+    .appointment button {
+        font-size: 0.9rem;
+    }
+}
+/* Media query for large screens */
+@media (min-width: 1025px) {
+    .appointment h1 {
+        font-size: 2rem;
+        top: -10rem;
+    }
+    .appointment form {
+        padding: 2rem;
+    }
+    .appointment input {
+        font-size: 1rem;
+    }
+    .appointment button {
+        font-size: 0.9rem;
+    }
+}

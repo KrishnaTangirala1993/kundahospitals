@@ -1,0 +1,133 @@
+.specialities-wrapper {
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.left-arrow {
+    left: 20px; /* Adjusted for better visibility */
+}
+
+.right-arrow {
+    right: 20px; /* Adjusted for better visibility */
+}
+
+.specialities-container {
+    display: flex;
+    justify-content: center;
+    transition: transform 0.3s ease;
+    padding: 0 60px; /* Adjusted padding for better visibility */
+    overflow-x: auto; /* Allow horizontal scrolling */
+}
+
+.card {
+    width: 200px;
+    margin: 0 30px; /* Adjusted margin to ensure space between cards */
+    cursor: pointer;
+    perspective: 1000px;
+}
+
+.card-image {
+    width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensures the image covers the card area */
+    border-radius: 10px; /* Optional: add some rounded corners */
+}
+
+.card-front,
+.card-back {
+    backface-visibility: hidden;
+    transition: transform 0.6s;
+}
+
+.card-front {
+    transform: rotateY(0deg);
+}
+
+.card-back {
+    transform: rotateY(180deg);
+}
+
+.card.flipped .card-front {
+    transform: rotateY(-180deg);
+}
+
+.card.flipped .card-back {
+    transform: rotateY(0deg);
+}
+
+@media (max-width: 1200px) {
+    .card {
+        width: 180px;
+        margin: 0 25px; /* Adjusted margin for responsiveness */
+    }
+}
+
+@media (max-width: 992px) {
+    .card {
+        width: 160px;
+        margin: 0 20px; /* Adjusted margin for responsiveness */
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 140px;
+        margin: 0 15px; /* Adjusted margin for responsiveness */
+    }
+
+    .arrow {
+        font-size: 1.5rem;
+    }
+
+    .left-arrow {
+        left: 10px; /* Adjusted for smaller screens */
+    }
+
+    .right-arrow {
+        right: 10px; /* Adjusted for smaller screens */
+    }
+
+    .specialities-container {
+        padding: 0 40px; /* Adjusted padding for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .card {
+        width: 120px;
+        margin: 0 10px; /* Adjusted margin for responsiveness */
+    }
+
+    .arrow {
+        font-size: 1.2rem;
+    }
+
+    .left-arrow {
+        left: 5px; /* Adjusted for smaller screens */
+    }
+
+    .right-arrow {
+        right: 5px; /* Adjusted for smaller screens */
+    }
+
+    .specialities-container {
+        padding: 0 20px; /* Adjusted padding for smaller screens */
+    }
+}
