@@ -2,21 +2,20 @@
 .appointment {
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
-    text-align: left;
-    padding: 40px; /* Add some padding for smaller screens */
+    /* align-items: center; */
+    /* height: 100vh; */
+    /* text-align: left; */
+    /* padding: 20px;  */
 }
-.appointment h1 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
+
+.heading{
     text-align: center;
 }
 .appointment form {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 300px; /* Set a max-width for larger screens */
+    max-width: 400px; /* Set a max-width for larger screens */
     padding: 2rem;
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -32,7 +31,8 @@
     padding: 0 1rem;
 }
 .appointment label {
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
+    /* width: 150px; */
 }
 .appointment input {
     padding: 0.5rem;
@@ -40,12 +40,14 @@
     margin-bottom: 0.5rem;
 }
 .appointment button {
-    padding: 0.3rem;
-    font-size: 0.9rem;
-    background-color: lightgreen;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    background-color: rgb(119, 119, 248);
     border: none;
     cursor: pointer;
     align-self: center;
+    border-radius: 5px;
+    margin-top: 1rem;
 }
 /* Media query for smaller screens */
 @media (max-width: 600px) {
@@ -55,13 +57,14 @@
     }
     .appointment form {
         padding: 1.5rem;
+        width: 90vw;
     }
     .appointment input {
         font-size: 0.9rem;
     }
-    .appointment button {
+    /* .appointment button {
         font-size: 0.8rem;
-    }
+    } */
 }
 /* Media query for medium screens */
 @media (min-width: 601px) and (max-width: 1024px) {
@@ -75,9 +78,9 @@
     .appointment input {
         font-size: 1rem;
     }
-    .appointment button {
+    /* .appointment button {
         font-size: 0.9rem;
-    }
+    } */
 }
 /* Media query for large screens */
 @media (min-width: 1025px) {
@@ -91,7 +94,16 @@
     .appointment input {
         font-size: 1rem;
     }
-    .appointment button {
+    /* .appointment button {
         font-size: 0.9rem;
-    }
+    } */
+}
+
+.form-card {
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.appointments-div{
+    background-color: skyblue;
+    padding: 20px;
 }

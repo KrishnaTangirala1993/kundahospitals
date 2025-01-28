@@ -6,6 +6,7 @@
     justify-content: center;
     height: 100vh;
     padding: 10px;
+    background-color: rgb(230, 230, 113);
 }
 /* Style for the contact card */
 .contact-card {
@@ -80,4 +81,20 @@
     .contact-card {
         padding: 20px;
     }
+}
+
+.email-link {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.email-link:hover {
+  text-decoration: none;
+}
+
+.icon{
+    font-size: 1rem !important;
+    display: flex;
+    justify-content: space-around;
 }
